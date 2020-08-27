@@ -15,7 +15,7 @@ The architecture of SQL Server is
 =Memory architecture
 =Data file architecture
 =Log file architecture
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SQL SERVER BASICS : 
 -Querying data= SELECT.
 -Sorting data= ORDER BY
@@ -33,5 +33,37 @@ SQL SERVER BASICS :
 -SQL Server Data Types = BIT , INT, DECIMAL, CHAR, NCHAR, VARCHAR, NVARCHAR, DATE, DATETIME2, TIME, DATETIMEOFFSET, GUID.
 -Constraints = Primary key , Foreign key, NOT NULL constraint , UNIQUE constraint, CHECK constraint.
 -Expressions = CASE , COALESCE , NULLIF .
+
+The Select Statement =:= SQL Server processes the FROM clause first and then the SELECT clause even though the SELECT clause appears first in the query.
+should not use the SELECT * for real production code due to the following main reasons:
+First, SELECT * often retrieves more data than your application needs to function. 
+It causes unnecessary data to transfer from the SQL Server to the client application, taking more time for data to travel across the network and slowing down the application.
+Second, if the table is added one or more new columns, theSELECT * just retrieves all columns that include the newly added columns which were not intended for use in the application. This could make the application crash.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL Server Views : 
+A view is select query which is stored under the tag VIEW as to save time and execute the same query again and again.
+Example : When you use the SELECT statement to query data from one or more tables, you get a result set. if you want to get the same result set,you can save the code in view and execute it.
+
+Advantages of views : 
+Security : You can restrict users to access directly to a table and allow them to access a subset of data via views.
+Simplicity : you can simplify the complex queries with joins and conditions using a set of views.
+Consistency : ometimes, you need to write a complex formula or logic in every query.To make it consistent, you can hide the complex queries logic and calculations in views.Once views are defined, you can reference the logic from the views rather than rewriting it in separate queries.
+
+View operation : 
+=Creating a new view 
+=Renaming a view
+=Listing views in SQL Server 
+=Getting view information 
+=Removing a view 
+=Creating an indexed view 
+=Renaming a view 
+=Listing views in SQL Server
+=Getting view information 
+=Removing a view
+Creating an new view
+
 
 
