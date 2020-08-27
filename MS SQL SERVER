@@ -16,5 +16,22 @@ The architecture of SQL Server is
 =Data file architecture
 =Log file architecture
 
+SQL SERVER BASICS : 
+-Querying data= SELECT.
+-Sorting data= ORDER BY
+-Limiting rows= OFFSET FETCH ,SELECT TOP.
+-Filtering data = DISTINCT ,WHERE , AND, OR, IN, BETWEEN, LIKE, 
+-Joining tables = Joins ,INNER JOIN, LEFT JOIN , RIGHT JOIN, FULL OUTER JOIN, CROSS JOIN, SELF JOIN .
+-Grouping data =GROUP BY, HAVING ,GROUPING SETS , CUBE , ROLLUP.
+-Subquery = Subquery , Correlated subquery, EXISTS , ANY, ALL.
+-Set Operators = UNION , INTERSECT , EXCEPT.
+-Common Table Expression (CTE)= CTE , Recursive CTE.
+-Pivot = PIVOT 
+-Modifying data = INSERT, INSERT multiple rows, INSERT INTO SELECT, UPDATE, UPDATE JOIN , DELETE ,MERGE.
+-Data definition = CREATE, DROP DATABASE ,CREATE , ALTER, DROP SCHEMA, CREATE TABLE, Identity column, Sequence, ALTER TABLE ADD column,ALTER TABLE ALTER COLUMN , 
+ ALTER TABLE DROP COLUMN , Computed columns, DROP TABLE, TRUNCATE TABLE ,SELECT INTO , Rename a table, Temporary tables , Synonym.
+-SQL Server Data Types = BIT , INT, DECIMAL, CHAR, NCHAR, VARCHAR, NVARCHAR, DATE, DATETIME2, TIME, DATETIMEOFFSET, GUID.
+-Constraints = Primary key , Foreign key, NOT NULL constraint , UNIQUE constraint, CHECK constraint.
+-Expressions = CASE , COALESCE , NULLIF .
 
 
