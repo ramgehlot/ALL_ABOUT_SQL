@@ -1,5 +1,11 @@
 
 
+A Database is a collection of related data organised in a way that data can be easily accessed, managed and updated. 
+Database can be software based or hardware based, with one sole purpose, storing data.
+
+A DBMS is a software that allows creation, definition and manipulation of database, allowing users to store, process and analyse data easily. DBMS provides us with an interface or a tool, 
+to perform various operations like creating database, storing data in it, updating data, creating tables in the database and a lot more.
+
 1-tier DBMS architecture
 2-tier DBMS architecture (Application layer)
 3-tier DBMS architecture (GUI Layer & Application layer)
