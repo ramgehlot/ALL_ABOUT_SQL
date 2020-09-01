@@ -1,3 +1,52 @@
+
+
+1-tier DBMS architecture
+2-tier DBMS architecture (Application layer)
+3-tier DBMS architecture (GUI Layer & Application layer)
+
+Primary key is a candidate key that is most appropriate to become the main key for any table. It is a key that can uniquely identify each record in a table.
+
+Super Key is defined as a set of attributes within a table that can uniquely identify each record within a table. Super Key is a superset of Candidate key.
+
+Candidate keys are defined as the minimal set of fields which can uniquely identify each record in a table. It is an attribute or a set of attributes that can act as a Primary Key for a table to uniquely identify each record in that table.
+
+Secondary or Alternative key : The candidate key which are not selected as primary key are known as secondary keys or alternative keys.
+
+Normalization of Database
+Database Normalization is a technique of organizing the data in the database. Normalization is a systematic approach of decomposing tables to eliminate data redundancy(repetition) and undesirable characteristics like Insertion, Update and Deletion Anomalies. 
+It is a multi-step process that puts data into tabular form, removing duplicated data from the relation tables.
+
+Normalization is used for mainly two purposes :
+Eliminating redundant(useless) data.
+Ensuring data dependencies make sense i.e data is logically stored.
+
+Normalization Rule : Normalization rules are divided into the following normal forms:
+First Normal Form : Single Valued Attributes(Atomic values),Attribute Domain should not change, Unique name for Attributes/Columns, Order doesn't matters
+Second Normal Form : First Normal Form + Partial Dependency
+Third Normal Form : Second Normal Form + Transitive Dependency
+BCNF (Boyce and Codd Normal Form) : Third Normal Form + And, for any dependency A → B, A should be a super key.
+Fourth Normal Form : Boyce-Codd Normal Form + Multi-valued Dependency.
+
+================================================================================================================================================================================
+Basic Concepts of ER Model in DBMS
+Database models, Entity-relationship model is a model used for design and representation of relationships between data.
+
+=Entity and Entity Set
+
+=ER Model: Attributes
+Simple attribute
+Composite attribute
+Derived attribute
+Single-valued attribute
+Multi-valued attribute
+
+=ER Model: Keys
+Super Key
+Candidate Key
+Primary Key
+
+=ER Model: Relationships : Binary relationship, Ternary relationship..
+
 ==========================Relational database=============================================================================================================================
 Relational database is a collection of organized set of tables related to each other, and from which data can be accessed easily.
 A table is a collection of data elements organised in terms of rows and columns. A table is also considered as a convenient representation of relations.
@@ -48,7 +97,7 @@ if we want to find the information for Regular Class and Extra Class which are c
 Rename Operation (ρ) : Syntax: ρ(RelationNew, RelationOld) 
 This operation is used to rename the output relation for any query operation which returns result like Select, Project etc. 
 
-
+=================================================================================================================================================================================
 
 
 
