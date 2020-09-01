@@ -1,0 +1,54 @@
+==========================Relational database=============================================================================================================================
+Relational database is a collection of organized set of tables related to each other, and from which data can be accessed easily.
+A table is a collection of data elements organised in terms of rows and columns. A table is also considered as a convenient representation of relations.
+A single entry in a table is called a Tuple or Record or Row. A tuple in a table represents a set of related data. 
+When an attribute is defined in a relation(table), it is defined to hold only a certain type of values, which is known as Attribute Domain.
+A relation schema describes the structure of the relation, with the name of the relation(name of table), its attributes and their names and type.
+A relation key is an attribute which can uniquely identify a particular tuple(row) in a relation(table).
+Relational Integrity Constraints=The three main Integrity Constraints are:
+1.Key Constraints : The Key Constraint specifies that there should be such an attribute(column) in a relation(table), which can be used to fetch data for any tuple(row).
+  The Key attribute should never be NULL or same for two different row of data.
+2.Domain Constraints : Domain constraints refers to the rules defined for the values that can be stored for a certain attribute.
+3.Referential integrity Constraints : If a table reference to some data from another table, then that table and that data should be present for referential integrity constraint to hold true.
+=========================Relational Algebra===================================================================================================================================
+Relational Algebra :Relational Algebra is a procedural query language used to query the database tables to access data in different ways.
+The primary operations that we can perform using relational algebra are:
+Select
+Project
+Union
+Set Different
+Cartesian product
+Rename
+
+Select Operation (σ) : Syntax: σp(r)
+Where, σ represents the Select Predicate, r is the name of relation(table name in which you want to look for data), and p is the prepositional logic,  where we specify the conditions that must be satisfied by the data. 
+In prepositional logic, one can use unary and binary operators like =, <, > etc, to specify the conditions.
+Example : 
+σage > 17 (Student), σage > 17 and gender = 'Male' (Student)
+
+Project Operation (∏) : Syntax: ∏A1, A2...(r)
+Project operation is used to project only a certain set of attributes of a relation. In simple words, If you want to see only the names all of the students in the Student table, then you can use Project Operation.
+∏Name, Age(Student)
+
+Union Operation (∪) : Syntax: A ∪ B
+This operation is used to fetch data from two relations(tables) or temporary relation(result of another operation).
+∏Student(RegularClass) ∪ ∏Student(ExtraClass)
+Above operation will give us name of Students who are attending both regular classes and extra classes, eliminating repetition.
+
+Set Difference (-) : Syntax: A - B
+This operation is used to find data present in one relation and not present in the second relation.
+ if we want to find name of students who attend the regular class but not the extra class, then, we can use the below operation:
+∏Student(RegularClass) - ∏Student(ExtraClass)
+
+Cartesian Product (X) :Syntax: A X B
+This is used to combine data from two different relations(tables) into one and fetch data from the combined relation.
+if we want to find the information for Regular Class and Extra Class which are conducted during morning, then, we can use the following operation:
+σtime = 'morning' (RegularClass X ExtraClass)
+
+Rename Operation (ρ) : Syntax: ρ(RelationNew, RelationOld) 
+This operation is used to rename the output relation for any query operation which returns result like Select, Project etc. 
+
+
+
+
+
